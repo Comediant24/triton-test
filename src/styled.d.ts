@@ -8,5 +8,11 @@ declare module 'styled-components' {
       main: string;
       secondary: string;
     };
+
+    fontSize: {
+      h1: string;
+      h2: string;
+      p: string;
+    };
   }
 }
