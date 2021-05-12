@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
 import { Layout } from './layouts';
+import Basket from './pages/basket';
 import { Main } from './pages/main';
 
 function App() {
@@ -11,7 +12,9 @@ function App() {
           <Route exact path="/">
             <Main />
           </Route>
-          <Route exact path="/basket"></Route>
+          <Route exact path="/basket">
+            <Basket />
+          </Route>
           <Route exact path="*">
             <Redirect to="/" />
           </Route>
